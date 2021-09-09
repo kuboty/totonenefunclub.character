@@ -1,0 +1,177 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  font-size: 16px;
+  /* font-family: '游ゴシック'; */
+}
+
+body{
+  margin: 0;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  /* background-color: rgba(180, 252, 252, 0.534); */
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*  ヘッダー  */
+header{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+
+header img{
+  width: 125px;
+}
+
+header ul{
+  display: flex;
+  
+}
+
+header ul a{
+  display: inline-block;
+  width: 100px;
+  color: black;
+  padding: 20px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-align: center;
+
+  transition-property: background;
+  transition-duration: .5s;
+}
+
+header ul a:hover{
+  background-color: rgb(214, 214, 214);
+  
+}
+
+header li{
+  padding: 0 10px;
+}
+
+
+/*  メイン  */
+main{
+  background-color: rgba(180, 252, 252, 0.534);
+}
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main h1{
+  text-align: center;
+  padding: 25px 0 50px;
+}
+
+.character{
+  display: flex;
+}
+
+.character:nth-child(3){
+  flex-direction: row-reverse;
+}
+
+.character img{
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.character .text{
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.character .text .toto::after{
+  content: '♂';
+  padding-left: 20px;
+}
+
+.character .text .nene::after{
+  content: '♀';
+  padding-left: 20px;
+}
+
+.character .text p{
+  padding-bottom: 20px;
+  text-align: start;
+}
+
+/*  フッター  */
+footer{
+  padding: 20px 0 30px;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  background-color: black;
+}
+
+/*  メディアクエリ  */
+@media(max-width:670px){
+  /*  ヘッダー  */
+  header{
+    display: block;
+  }
+
+  header .logo{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  header nav{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  header ul{
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  /*  メイン  */
+  .container{
+    max-width: 600px;
+  }
+
+  .character{
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .character img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .character .text{
+    padding-top: 0;
+  }
+
+  .character .text p:nth-child(even){
+    text-align: center;
+  }
+}

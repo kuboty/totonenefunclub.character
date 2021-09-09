@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html{
+  font-size: 16px;
+  /* font-family: '游ゴシック'; */
+}
+
+body{
+  margin: 0;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.container{
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*  ヘッダー  */
+header{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4%;
+}
+
+header img{
+  width: 125px;
+}
+
+header ul{
+  display: flex;
+  
+}
+
+header ul a{
+  display: inline-block;
+  width: 100px;
+  color: black;
+  padding: 20px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-align: center;
+
+  transition-property: background;
+  transition-duration: .5s;
+}
+
+header ul a:hover{
+  background-color: rgb(214, 214, 214);
+  
+}
+
+header li{
+  padding: 0 10px;
+}
+
+
+/*  メイン  */
+.title{
+  background-image: url(../img/totonene2_3233.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.title h1{
+  padding-top: 150px;
+  padding-bottom: 25px;
+  color: white;
+}
+
+.title p{
+  color: white;
+}
+
+.btn{
+  padding: 20px 150px;
+  background-color: aqua;
+  border-radius: 50px;
+  cursor: pointer;
+  color: black;
+  opacity: .7;
+
+  transition-property: background,color;
+  transition-duration: .5s;
+}
+
+.btn:hover{
+  background: rgb(0, 217, 255);
+  color: white;
+}
+
+.mar-b{
+  margin: 0 auto;
+  margin-top: 100px;
+
+}
+
+/*  フッター  */
+footer{
+  padding: 20px 0 30px;
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  background-color: black;
+}
+
+/*  メディアクエリ  */
+@media(max-width:670px){
+
+  /*  ヘッダー  */
+  header{
+    display: block;
+  }
+
+  header .logo{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  header nav{
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  header ul{
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  /*  メイン  */
+main title{
+  height: 500px;
+}
+
+  main .title h1{
+    font-size: 1.8rem;
+  }
+  
+  main .btn{
+    padding: 20px 50px;
+  }
+}
